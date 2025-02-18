@@ -1,0 +1,20 @@
+spring:
+  ##  database info
+  datasource:
+    url: jdbc:postgresql://localhost:5432/webchat
+    username: postgres
+    password: dancali
+    driver-class-name: org.postgresql.Driver
+  application:
+    name: realchatapi
+  jpa:
+    ##show-sql: true
+    ##  Hibernate DDL create, update...
+    hibernate:
+      ddl-auto: update
+    ## Generation du schemat de la base de donnee;
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+server:
+  port: 8080
