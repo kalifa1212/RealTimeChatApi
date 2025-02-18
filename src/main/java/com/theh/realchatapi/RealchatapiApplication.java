@@ -12,7 +12,7 @@ public class RealchatapiApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(RealchatapiApplication.class, args);
 	}
-
+	// cors configuration
 	@Bean
 	public WebMvcConfigurer corsConfigurer() {
 		return new WebMvcConfigurer () {
